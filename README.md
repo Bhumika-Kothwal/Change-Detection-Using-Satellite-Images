@@ -38,7 +38,7 @@ Software used for this project :
 
 ### Prerequisites
  
- * Satellite images(add images)
+ 
  
   
 
