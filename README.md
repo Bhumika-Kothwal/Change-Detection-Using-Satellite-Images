@@ -52,7 +52,7 @@ git clone https://github.com/Tejal-19/Change-Detection-Using-Satellite-Images.gi
 <!-- USAGE EXAMPLES -->
 ## Usage
 ```
-Open .
+Open scripts and start running the files as a python code 
 ```
 <!-- RESULTS AND DEMO -->
 ## Results and Demo
