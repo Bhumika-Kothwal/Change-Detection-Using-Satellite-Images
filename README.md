@@ -1,5 +1,5 @@
 # Change-Detection-Using-Satellite-Images  
-Detecting change in the forest cover from the satellite images
+Detecting change in the satellite images using Principal Component Analysis(PCA) and K-means Clustering Tehchniques.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -21,11 +21,8 @@ Detecting change in the forest cover from the satellite images
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![input]()  
-![Final output]()  
-
 The aim of the project is to detect the changes in the forest cover of a speciffic area from the satellite images which are already denoised and registered. The process involves the concept of PCA for analyzing the principal components of the image in order to form a vector set which can be further clustered into smaller and significant groups. Clusteing involves the K-means clustering algorithm which is further used to detect the change. 
-Refer this [documentation]().
+Refer this [documentation](https://drive.google.com/file/d/1j7COQWWlqx9swfpbzQkdvQsXJ2uHmoSq/view?usp=sharing).
 
 ### Tech Stack
 Software used for this project :  
@@ -50,19 +47,14 @@ git clone https://github.com/Bhumika-Kothwal/Change-Detection-Using-Satellite-Im
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-```
-Open scripts and start running the files as a python code 
-```
+
+
 <!-- RESULTS AND DEMO -->
 ## Results and Demo
-Image before change detection:  
-  
-![**input**]()  
-  
-Image after change detection:  
-  
-![**output**]()  
-  
+Input Image 1|Input Image 2|Output Image
+-------------|-------------|------------
+<img width="400" height="300" src="https://github.com/Bhumika-Kothwal/Change-Detection-Using-Satellite-Images/blob/master/Images/AyakkumLake1.jpg">|<img width="400" height="300" src="https://github.com/Bhumika-Kothwal/Change-Detection-Using-Satellite-Images/blob/master/Images/AyakkumLake2.jpg">|<img width="400" height="300" src="https://github.com/Bhumika-Kothwal/Change-Detection-Using-Satellite-Images/blob/master/Output/output_ChangeMap.jpg"> 
+
 <!-- FUTURE WORK -->
 ## Future Work
 
@@ -75,17 +67,16 @@ Image after change detection:
 ## Contributors
 
 * MENTORS
-  1. Mr. Dhruva Gole: 
+  1. [Mr. Dhruva Gole](https://github.com/DhruvaG2000): 
 * MEMBERS
   1. [Ms. Tejal Bedmutha](https://github.com/Tejal-19) : tezzb18@gmail.com
   2. [Ms. Reshmika Sreenath Nambiar](https://github.com/Reshmika-Nambiar) : reshmikasnambiar@gmail.com
-  3. [Bhumika Kothwal](https://github.com/Bhumika-Kothwal)
+  3. [Bhumika Kothwal](https://github.com/Bhumika-Kothwal) : kothwalbhumika@gmail.com
 
 <!-- ACKNOWLEDGEMENTS AND REFERENCES -->
 ## Acknowledgements and Resources
 * [SRA VJTI](http://sra.vjti.info/)  
 * IEEE research papers
-*
 
 
 <!-- LICENSE -->
