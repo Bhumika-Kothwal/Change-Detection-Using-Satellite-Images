@@ -38,8 +38,8 @@ Software used for this project :
 
 ### Prerequisites
 
- *Text editor 
- *Satellite images(add images)
+ * Text editor 
+ * Satellite images(add images)
  
   
 
