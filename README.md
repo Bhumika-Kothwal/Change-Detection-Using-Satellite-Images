@@ -81,7 +81,7 @@ Image after change detection:
 * MEMBERS
   1. [Ms. Tejal Bedmutha](https://github.com/Tejal-19) : tezzb18@gmail.com
   2. [Ms. Reshmika Sreenath Nambiar](https://github.com/Reshmika-Nambiar) : reshmikasnambiar@gmail.com
-  3. [Bhumika Kothwal]()
+  3. [Bhumika Kothwal](https://github.com/Bhumika-Kothwal)
 
 <!-- ACKNOWLEDGEMENTS AND REFERENCES -->
 ## Acknowledgements and Resources
