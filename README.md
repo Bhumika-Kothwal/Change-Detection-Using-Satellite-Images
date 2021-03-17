@@ -29,7 +29,7 @@ Refer this [documentation]().
 
 ### Tech Stack
 Software used for this project :  
-   [Any text editors with python compiler](preferably jupyter notebook or vs code )
+  
 
 ### File Structure
 
@@ -37,8 +37,7 @@ Software used for this project :
 ## Getting Started
 
 ### Prerequisites
-
- * Text editor 
+ 
  * Satellite images(add images)
  
   
@@ -46,7 +45,7 @@ Software used for this project :
 ### Installation
 Clone the repo
 ```sh
-git clone https://github.com/Tejal-19/Change-Detection-Using-Satellite-Images.git
+git clone 
 ```
 
 <!-- USAGE EXAMPLES -->
@@ -77,7 +76,6 @@ Image after change detection:
 
 * MENTORS
   1. Mr. Dhruva Gole: 
-  2.
 * MEMBERS
   1. [Ms. Tejal Bedmutha](https://github.com/Tejal-19) : tezzb18@gmail.com
   2. [Ms. Reshmika Sreenath Nambiar](https://github.com/Reshmika-Nambiar) : reshmikasnambiar@gmail.com
