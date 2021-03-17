@@ -7,7 +7,6 @@
 ### Outputs
 
 ### Conclusion    
-* 
 
 ### Doubts
 * Correct result for some images not obtained -     
@@ -15,7 +14,7 @@
   More explaination in [#1](https://github.com/Bhumika-Kothwal/Change-Detection-Using-Satellite-Images/issues/1) in Issues section.
   
 
-## 2. Program file name : DetectChange_h4.py 
+## 2. Program file name : DetectChange_h4.py , DetectChange_h5.py
 
 ### Description of program  
 
@@ -23,7 +22,4 @@
 
 
 ### Conclusion
-* hxh non-overlapping box set to create eigen vector space takes only odd values of h (concluded by practically experimenting)
-
-### Doubts
-* hxh box takes only odd values of h, why not even?
+* hxh non-overlapping box set to create eigen vector space takes both odd and even values of h (concluded by practically experimenting)
