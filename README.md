@@ -45,7 +45,7 @@ Software used for this project :
 ### Installation
 Clone the repo
 ```sh
-git clone 
+git clone https://github.com/Bhumika-Kothwal/Change-Detection-Using-Satellite-Images.git
 ```
 
 <!-- USAGE EXAMPLES -->
