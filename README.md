@@ -59,25 +59,26 @@ The change map is then written into the output.
 
 ### Outputs
 #### Example 1
-Original Image|  Final Image
+Original Image|  Final Image|
 :-------------------------:|:-------------------------:
-![Initial Image of Ayakkum Lake](/Images/AyakkumLake1.jpg)  |  ![Final Image of Ayakkum Lake](/Images/AyakkumLake2.jpg)
+<img width="400" height="300" src="https://github.com/Bhumika-Kothwal/Change-Detection-Using-Satellite-Images/blob/master/Images/AyakkumLake1.jpg">|<img width="400" height="300" src="https://github.com/Bhumika-Kothwal/Change-Detection-Using-Satellite-Images/blob/master/Images/AyakkumLake2.jpg">
 
-##### Change Map
-![Change Map of Ayakkum Lake](/Output/output_ChangeMap_AyakkumLake.jpg)
+Change Map|
+:-------------------------: 
+|<img width="400" height="350" src="https://github.com/Bhumika-Kothwal/Change-Detection-Using-Satellite-Images/blob/master/Output/output_ChangeMap.jpg">|
+
 
 #### Example 2
-Original Image|  Final Image
-:-------------------------:|:-------------------------:
-![Initial Image of Circle](/Images/circle1.jpg)  |  ![Final Image of Circle](/Images/circle2.jpg)
+Original Image|  Final Image| Change Map
+:-------------------------:|:-------------------------:|:-------------------------:
+<img width="300" height="300" src="/Images/circle1.jpg">|<img width="300" height="300" src="/Images/circle2.jpg">|<img width="300" height="300" src="/Output/output_ChangeMap_circle.jpg">
 
-##### Change Map
-![Change Map of Circle](/Output/output_ChangeMap_circle.jpg)
 
 ### Conclusion    
 Thus, the change map has been created based on the difference between the two images.
-  
-
+    
+     
+         
 ## 2. Program file name : DetectChange_h4.py , DetectChange_h5.py
 
 ### Description of program    
