@@ -1,6 +1,18 @@
-image1_path = "AyakkumLake1.jpg"
-image2_path = "AyakkumLake2.jpg"
-out_dir = "output_"
+import argparse
+
+#Parse argument
+ap = argparse.ArgumentParser()
+ap.add_argument("-io", "--input_image_one", required = True,
+	help = "Path to the directory that contains the first image")
+ap.add_argument("-it", "--input_image_two", required = True,
+	help = "Path to the directory that contains the second image")
+ap.add_argument("-o", "--output_directory", required = True,
+	help = "Path to the output directory (should end with '/')")
+args = vars(ap.parse_args())
+
+image1_path = args["input_image_one"]
+image2_path = args["input_image_two"]
+out_dir = args["output_directory"]
 
 
 print('[INFO] Start Change Detection ...')
@@ -49,7 +61,7 @@ def find_FVS(EVS, diff_image, mean_vec, new):
             feature_vector_set.append(feature)
             j = j+1
         i = i+1
- 
+    
     FVS = np.dot(feature_vector_set, EVS)
     FVS = FVS - mean_vec
     print ("[INFO] Feature vector space size", FVS.shape)
