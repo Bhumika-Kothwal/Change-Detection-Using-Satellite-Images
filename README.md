@@ -5,7 +5,7 @@
 ### Description of program 
 The program detects the change between two images and shows it as an output image.
 
-First, the images are read and resized, and their difference image is found.  
+First, the images are read and resized, and their difference image is found.
  
 ```python
 diff_image = abs(image1 - image2)
@@ -89,3 +89,14 @@ Both the programs with value of hxh non-overlapping box as 4x4 and 5x5 give expe
 
 ### Conclusion
 * hxh non-overlapping box set to create eigen vector space takes both odd and even values of h (concluded by practically experimenting)
+
+
+
+## 3. Program file name : Calc_ChangeArea.py
+
+### Description of program    
+The program file Calc_ChangeArea.py calculates the value of pixels that are marked as change i.e. white pixels and calculates the percentage of these pixels with total image size. Hence, this gives the percentage of change present as comapred to entire image.
+
+### Outputs
+Outputs the percentage of change in images in the terminal.
+
