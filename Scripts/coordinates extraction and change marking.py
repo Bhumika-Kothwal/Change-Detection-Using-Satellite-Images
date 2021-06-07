@@ -65,6 +65,7 @@ def clustering(FVS, components, new):
     least_index = min(count, key = count.get)
     change_map  = np.reshape(output,(new[1] - 4, new[0] - 4))
     return least_index, change_map
+# edge detectionusing canny filter and ploting it 
 def edge_detection(CloseMap):
     edges = cv2.Canny(CloseMap, 100, 200)
     plt.subplot(121), plt.imshow(CloseMap, cmap = 'gray')
@@ -75,21 +76,23 @@ def edge_detection(CloseMap):
     plt.show()
     #cv2.imwrite(out_dir+'Edges.jpg', edges)
     return edges
-
+# extracting coordinates of the changed area by dividing the changed image into sections of size 5x5
 def printFinal(image, edge):
+    #dividing the white section of the edge detected image into 5x5 sections 
     edge[:5,:5] = 255
+    #finding the white section of the image and storing the coordinates in the variable indices
     indices = np.where(edge == 255)
     print ("coordinates of changed places" ,indices)
     coordinates = zip(indices[0], indices[1])
-    #print coordinates
+    #forming a numpy array of x and y coordinates
     arr1 = np.asarray(list(map(np.int, indices[0])))
     arr2 = np.asarray(list(map(np.int, indices[1])))
-    #print arr1
-    #print arr2
-    #print len(arr1)
+    #copying the original input image in variable impcopy
     imcopy = image.copy()
+    #changing the colour of the coordinates in the original image wherever a change is seen 
     for i in range(len(indices[0])):
         imcopy[indices[0][i]][indices[1][i]] = [255, 0, 0]
+    #plotting the changes
     plt.subplot(121), plt.imshow(image)
     plt.title('Original Image'), plt.xticks([]), plt.yticks([])
     plt.subplot(122), plt.imshow(imcopy)
