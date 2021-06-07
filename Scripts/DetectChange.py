@@ -1,10 +1,13 @@
+#inputing images captured from the satellite
 image1_path = "AyakkumLake1.jpg"
 image2_path = "AyakkumLake2.jpg"
+#specifying the output destination
 out_dir = "output_"
 
 
 print('[INFO] Start Change Detection ...')
 print('[INFO] Importing Librairies ...')
+#importing libraries
 import cv2 
 import sklearn
 from sklearn.cluster import KMeans
@@ -14,12 +17,14 @@ import skimage.morphology
 import numpy as np
 import time
 
-
+# forming the vector set of the input image 
 def find_vector_set(diff_image, new_size):
  
     i = 0
     j = 0
+    #forming a numpy array consisting of zeroes 
     vector_set = np.zeros((int(new_size[0] * new_size[1] / 25),25))
+    #forming a vector set from the new size of the image 
     while i < vector_set.shape[0]:
         while j < new_size[1]:
             k = 0
@@ -30,20 +35,22 @@ def find_vector_set(diff_image, new_size):
                 k = k + 5
             j = j + 5
         i = i + 1
-
+        
+    # Finding the mean of the new vector set
     mean_vec   = np.mean(vector_set, axis = 0)
     # Mean normalization
     vector_set = vector_set - mean_vec   
     return vector_set, mean_vec
-
+   
+#Finding the feature vector set 
 def find_FVS(EVS, diff_image, mean_vec, new):
- 
     i = 2
     feature_vector_set = []
  
     while i < new[1] - 2:
         j = 2
         while j < new[0] - 2:
+            #forming the feature vector set by eliminating the edges
             block = diff_image[i-2:i+3, j-2:j+3]
             feature = block.flatten()
             feature_vector_set.append(feature)
@@ -54,14 +61,15 @@ def find_FVS(EVS, diff_image, mean_vec, new):
     FVS = FVS - mean_vec
     print ("[INFO] Feature vector space size", FVS.shape)
     return FVS
-
+# cluster formation 
 def clustering(FVS, components, new):
+    #applying K-Means clustering to the feature vector set 
     kmeans = KMeans(components, verbose = 0)
     kmeans.fit(FVS)
     output = kmeans.predict(FVS)
     count  = Counter(output)
- 
     least_index = min(count, key = count.get)
+    #forming a changed map  
     change_map  = np.reshape(output,(new[1] - 4, new[0] - 4))
     return least_index, change_map
     
